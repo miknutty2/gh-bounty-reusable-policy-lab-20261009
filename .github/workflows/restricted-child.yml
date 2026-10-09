@@ -1,0 +1,11 @@
+name: Restricted child boundary
+on:
+  workflow_call:
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Boundary marker
+        run: echo GH_BOUNTY_REUSABLE_CHILD_20261009_M4R8
