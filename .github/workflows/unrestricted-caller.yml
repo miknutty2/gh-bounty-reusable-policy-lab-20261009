@@ -1,0 +1,7 @@
+name: Unrestricted caller boundary
+on:
+  issues:
+    types: [opened]
+jobs:
+  call:
+    uses: ./.github/workflows/restricted-child.yml
