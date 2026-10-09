@@ -1,6 +1,8 @@
 name: Restricted child boundary
 on:
   workflow_call:
+  issues:
+    types: [opened]
 jobs:
   probe:
     runs-on: ubuntu-latest
